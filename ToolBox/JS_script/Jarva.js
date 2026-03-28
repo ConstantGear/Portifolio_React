@@ -4,7 +4,7 @@ const Descrições = [
      "Criação de um layout de apresentação pessoal contendo meu nome, minhas soft skills e hard skills, utilizando o framework React Native e a plataforma Expo Snack.<br><br>O projeto tem como objetivo apresentar minhas habilidades de forma simples, prática e visualmente organizada.<br><br>- Layout simples e objetivo<br>- Utilização de React Native e Expo Snack<br>- Foco em praticidade e clareza"]
 const HtmlText = document.getElementById("descrições")
 const ImgHtml = document.getElementById("Img")
-const Imgs = ["./ToolBox/Images/Pg1/Capturar.png", "./ToolBox/Images/Pg2/Capturar.png", "./ToolBox/Images/Pg3/Img.PNG"]
+const Imgs = ["./ToolBox/Images/Pg1/Capturar.PNG", "./ToolBox/Images/Pg2/Capturar.PNG", "./ToolBox/Images/Pg3/Img.PNG"]
 const Links = ["https://snack.expo.dev/@jose_isac1/nova_ficha", "https://snack.expo.dev/@jose_isac1/telas", "https://snack.expo.dev/@jose_isac1/app_aula01"]
 const sound = new Audio("./ToolBox/Sounds/Click.mp3");
 sound.volume = 0.3;
