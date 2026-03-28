@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="./ToolBox/Css/Style+.css">
+    <script src="./ToolBox/JS_script/Jarva.js" defer></script>
+</head>
+<body>
+    <div class="Main_Contain">
+        <div class="Head" id="bio"> 
+            <h1> <pre>PORTIFÓLIO MOBILE</h1> </pre> 
+        </div>
+        <div class="Menu"> 
+            <a href="#bio" onclick="sound.play()">Bio</a>
+            <a href="#projetos" onclick="sound.play()">Projetos</a>
+            <a href="#Ferramentas" onclick="sound.play()">Ferramentas</a>
+        </div>
+        <div class="Main">
+                <div class="Content_area">
+                    <div class="Icon">
+                        <img src="./ToolBox/Images/Icons/Minha.png" alt="Foto de perfil" class="Profile_Pic">
+                    </div>
+
+                    <div class="Content">
+                        <h2>Biografia</h2>
+                        <p>Olá, meu nome é José Isac, tenho 17 anos e sou um amador em programação, Atualmente estudando desenvolvimento de sistemas na Etec de São José dos Campos. Desde cedo sempre tive muito curiosidade de saber como jogos, softwares e sites funcionavam, oque me levou a conhecer a linguagem de programação HTML que me deu a liberdade de explorar mais como a programação era capaz de criar coisas incríveis na web, depois disso fui para outras linguagens como Python, C#, JavasScript entre outras linguagens do meu interesse. Atualmente estou buscando me aprimorar em linguagens do meu interesse, sempre buscando desafios de criação e resolução de problemas, para aprimorar meu desenvolvimento pessoal como programador.</p>
+                    </div>
+                </div>
+
+                <div id="projetos" class="Content_area" >
+                    <img src="./ToolBox/Images/Place_Holder.png" id="Img" alt="Foto de perfil">
+                    <div class="Content_Text">
+                        <h2>Projetos</h2>
+                        <p id="descrições"></p>
+                        <input type="button" onclick="Redirecionar()" value="Ver Projeto">
+                        <div class="Button_Container">
+                            <input type="button" onclick="Previous()" value="<"> 
+                            <input type="button" onclick="Next()" value=">">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Ferramentas" class="Content_area"> 
+                   <h1> <pre> Ferramentas </pre></h1>
+                   <div class="box" >
+
+                   </div>
+                   <div class="box_container">
+                        <div class="box">
+                            <img class="Icon" src="./ToolBox/Images/Icons/Icon1.webp" alt="Icone de Aplicativo">
+                            <h2>React Native</h2>
+                            <p>React Native é um framework JavaScript criado pela Meta. Ele é usado para desenvolver aplicativos mobile para Android e iOS de forma nativa. Sua principal vantagem é permitir o reaproveitamento de grande parte do código entre as plataformas, tornando o desenvolvimento mais rápido e prático.</p>
+                        </div>
+                        <div class="box">
+                            <img class="Icon" src="./ToolBox/Images/Icons/Icon2.jpg" alt="Icone de Aplicativo">
+                            <h2>Expo</h2>
+                            <p>Expo é um conjunto de ferramentas baseado no React Native que facilita a criação de aplicativos mobile. Ele oferece um ambiente já configurado, recursos prontos e a possibilidade de testar o aplicativo no celular de forma rápida, sem precisar mexer diretamente no código nativo.</p>
+                        </div>         
+                   </div>
+                </div>
+            </div>
+            <div class="footer_area">
+                <h1 style="font-size: 2dvh;">Todos os direitos  não reservados.</h1>
+            </div>
+    </div>
+
+</body>
+</html>
