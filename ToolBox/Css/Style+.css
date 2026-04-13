@@ -5,7 +5,9 @@
 
 * {
     box-sizing: border-box;
+    border-color: #635b51 !important;
 }
+
 
 body {
     margin: 0;
@@ -15,7 +17,7 @@ body {
     align-items: center;
     min-height: 100dvh;
     font-family: "Font-1";
-    background-image: linear-gradient(180deg, rgb(66, 165, 211), rgb(255, 255, 255));
+    background-image: linear-gradient(180deg, #24759B, #181A1B);
     background-attachment: scroll;
     scroll-behavior: smooth;
 }
@@ -30,7 +32,7 @@ body {
         "Footer Footer Footer"; 
     width: 75vw;
     min-height: 100dvh;
-    background-image: linear-gradient(180deg, rgb(70, 70, 70), rgba(30, 30, 30, 0.877));
+    background-image: linear-gradient(180deg, #33373A, #181A1B);
 }
 
 .Main_Contain h1 {
@@ -45,7 +47,7 @@ body {
     align-items: center;
     white-space: nowrap; 
     overflow: hidden;
-    background-color: #37373a;
+    background-color: #2B2E30;
 }
 
 .Main_Contain .Main { 
@@ -53,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 8dvh;
+    padding-bottom: 10dvh;
 }
 
 .Main_Contain .Menu { 
@@ -67,7 +70,7 @@ body {
     border-top: 10px solid transparent;
     border-image: linear-gradient(90deg, rgb(34, 107, 167), rgba(43, 129, 209, 0.932));
     border-image-slice: 1;
-    background-image: linear-gradient(180deg, rgb(38,38,38), rgba(38,38,38,0) 30%);
+    background-image: linear-gradient(180deg, #1E2021, #2C3134 30%, #181A1B 101%);
 }
 
 a {
@@ -132,7 +135,7 @@ a {
 }
 
 .Content p {
-    font-size: 2.7vh;
+    font-size: large;
     text-align: justify;
 }
 
@@ -217,6 +220,7 @@ a {
 
 #descrições {
     transition: opacity 0.3s;
+    font-size: 1.08rem;
 }
 
 #Img {
@@ -268,7 +272,7 @@ a {
 }
 
 .box p {
-    font-size: 2.7vh;
+    font-size: large;
     text-align: center;
     padding: 0.5dvw;
 }
@@ -279,91 +283,178 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10dvh;
     min-height: 10dvh;
-    background-color: #37373a;
+    background-color: #2B2E30;
 }
 
 @media (max-width: 768px) {
 
     body {
-        background: rgb(38,38,38);
+        background: #181A1B;
+        align-items: stretch;
+        margin-bottom: 10dvh;
     }
 
     .Main_Contain {
         display: flex;
         flex-direction: column;
         width: 100%;
-        min-height: 100dvh;
+        min-height: 100svh;
     }
 
-    .Main_Contain .Main {
+    .Head {
+        position: relative !important;
+        width: 100%;
+        z-index: 999;
+        background-color: #2B2E30;
+        max-height: 10dvh;
+    }
+
+    .Menu {
+        position: relative;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        row-gap: 4dvh;
+        justify-content: space-around;
+        padding: 0.5rem;
+        background: #1E2021;
+        border-bottom: 2px solid #333;
+        z-index: 998;
+    }
+
+    .Menu a {
+        flex: 1;
+        font-size: 0.75rem;
+        padding: 0.6rem 0;
+        text-align: center;
+        border-right: 1px solid #333;
+    }
+
+    .Menu a:last-child {
+        border-right: none;
+    }
+
+    .Main_Contain h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .Main {
+        padding: 40px 0.8rem 20px;
+        row-gap: 1.5rem;
+        padding-bottom: 0 !important;
     }
 
     .Content_area {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        align-items: center;
+        background: #222526;
+        border-radius: 14px;
+        padding: 0.8rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     .Content_area .Icon {
+        display: flex;
+        order: 1;
+        width: 100%;
         margin: 0;
-        padding: 1dvh;
-        text-align: center;
+        padding: 0;
+        justify-content: center;
     }
 
     .Icon img {
         width: 70%;
-        height: auto;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 12px;
+        opacity: 0.9;
     }
 
     .Content_area .Content {
-        width: 100%;
-        margin: 0;
-        padding: 1dvh;
+        order: 2;
+        padding: 0.5rem 0;
+    }
+
+    .Content h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        text-align: center;
     }
 
     .Content p {
-        text-align: justify;
-        font-size: 2.2vh;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        color: #c0c0c0;
     }
 
     #projetos.Content_area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 0.5rem;
+        flex-direction: column !important;
+        gap: 1rem;
     }
 
     #projetos.Content_area img {
-        width: 100%;
-        height: auto;
+        width: 95%;
+        height: 480px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     #projetos.Content_area .Content_Text {
         width: 100%;
     }
 
-    #Ferramentas.Content_area .box_container {
-        display: flex;
+    #projetos.Content_area .slider {
+        height: 300px;
+    }
+
+    .Button_Container,
+    .Select_Container {
         flex-direction: column;
-        align-items: center;
-        row-gap: 2dvh;
+        gap: 0.4rem;
+    }
+
+    input[type='button'] {
+        width: 100% !important;
+        height: 52px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    #Ferramentas.Content_area {
+        gap: 1rem;
+    }
+
+    #Ferramentas h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    #Ferramentas.Content_area .box_container {
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
     .box_container .box {
-        width: 85%;
+        width: 100%;
+        padding: 0.8rem;
+        background: #222526;
+        border-radius: 12px;
     }
 
-    .Menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .box .Icon {
+        width: 120px;
+    }
+
+    .box h2 {
+        font-size: 1.3rem;
+    }
+
+    .box p {
+        font-size: 1.05rem;
     }
 
     .footer_area {
-        margin-top: 5dvh;
+        display: none;
     }
 }
