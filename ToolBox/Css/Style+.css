@@ -8,7 +8,6 @@
     border-color: #635b51 !important;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -42,12 +41,14 @@ body {
 
 .Main_Contain .Head { 
     grid-area: Head; 
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
     white-space: nowrap; 
     overflow: hidden;
     background-color: #2B2E30;
+    position: relative;
+
 }
 
 .Main_Contain .Main { 
@@ -60,6 +61,34 @@ body {
 
 .Main_Contain .Menu { 
     grid-area: Menu; 
+}
+
+.IconMedia {
+    grid-area: Head;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.IconMedia img {
+    width: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    flex: 1;
+}
+
+.IconMedia img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.IconMedia img:active {
+    filter: brightness(120%);
+    transition: 0.5s;
 }
 
 .Menu {
@@ -204,6 +233,36 @@ a {
     flex-direction: row;
 }
 
+.Select_img_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: 6%;
+    width: 4%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5%;
+}
+
+.Select_img_Container button {
+    flex: 1;
+    display: flex;
+    border-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 38, 38);
+    appearance: none !important;
+    color: rgb(200, 190, 190);
+    cursor: pointer;
+}
+
+.Select_img_Container button:hover {
+    filter: brightness(125%);
+    transition: 0.4s;
+}
+
 .Button_Container input[type='button'] {
     width: 100%  !important;
 }
@@ -223,7 +282,11 @@ a {
     font-size: 1.08rem;
 }
 
-#Img {
+#Img{
+    transition: opacity 0.8s;
+}
+
+#Subimg{
     transition: opacity 0.8s;
 }
 
@@ -285,6 +348,20 @@ a {
     align-items: center;
     min-height: 10dvh;
     background-color: #2B2E30;
+}
+
+#btn {
+    position: fixed;
+    bottom: 1dvh;
+    right: 1dvw;
+    z-index: 99;
+    width: 5dvw;
+    height: 10dvh;
+    border: 2px solid;
+    border-radius: 5%;
+    background-color: rgb(43, 38, 38);
+    cursor: pointer;
+    opacity: 0;
 }
 
 @media (max-width: 768px) {
@@ -441,6 +518,22 @@ a {
         background: #222526;
         border-radius: 12px;
     }
+
+    .Select_img_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    min-height: 3%;
+    width: auto;
+    border: 2px solid ;
+    border-radius: 5%;
+    }
+
+    .Select_img_Container button{
+        scale: 1.5;
+    }
+
 
     .box .Icon {
         width: 120px;

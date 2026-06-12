@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,21 @@
 
     <div class="Main_Contain">
         <div class="Head" id="bio"> 
-            <h1> <pre>PORTIFÓLIO</h1> </pre> 
+            <div class="IconMedia">
+                <img src="./ToolBox/Images/Icons/Steam.jpg" 
+                onclick="window.open('https://steamcommunity.com/profiles/76561199389009235','_blank')" 
+                alt="Steam">
+                <img src="./ToolBox/Images/Icons/Gmail.jpg" 
+                onclick="window.open('https://mail.google.com/mail/u/0/?to=ConstantGear@gmail.com+Subject&tf=cm','_blank')" 
+                alt="Instagram">
+                <img src="./ToolBox/Images/Icons/Cat.png" 
+                onclick="window.open('https://github.com/ConstantGear')" 
+                alt="Github">
+            </div>
+            <div style="display: flex; position: absolute; left: 0; bottom: 0; font-size: small; color: rgb(200, 190, 190);">
+                <label>“Nada é tão ruim que não possa piorar.” - desconhecido</label>
+            </div>
+            <h1> <pre>P O R T I F Ó L I O</h1> </pre> 
         </div>
         <div class="Menu"> 
             <a href="#bio" onclick="sound.play()">Bio</a>
@@ -34,6 +48,10 @@
 
                 <div id="projetos" class="Content_area" >
                     <img src="./ToolBox/Images/Place_Holder.png" id="Img" alt="Foto de perfil">
+                    <div class="Select_img_Container" id="Subimg">
+
+                        
+                    </div>
                     <div class="Content_Text">
                         <h2>Projetos</h2>
                         <p id="descrições"></p>
