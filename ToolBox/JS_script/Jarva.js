@@ -11,12 +11,12 @@ const ImgHtml = document.getElementById("Img");
 const ImgSelector = document.getElementById("Subimg");
 let mybutton = document.getElementById("btn");
 const Imgs = [
-    ["./ToolBox/Images/Pg1/Projeto1.PNG", "./ToolBox/Images/Pg1/Projeto1-2.PNG"],
-    ["./ToolBox/Images/Pg2/Projeto2.PNG", "./ToolBox/Images/Pg2/Projeto3.PNG"],
+    ["./ToolBox/Images/Pg1/Projeto1.PNG", "./ToolBox/Images/Pg1/Projeto1-2.png"],
+    ["./ToolBox/Images/Pg2/Projeto2.PNG", "./ToolBox/Images/Pg2/Projeto3.png"],
     ["./ToolBox/Images/Pg3/Img.PNG"],
     ["./ToolBox/Images/Pg4/OioiBaka.PNG"],
     ["./ToolBox/Images/Pg5/Yooooooooooo.png"],
-    ["./ToolBox/Images/Pg6/HAHAHAHA.png", "./ToolBox/Images/Pg6/Haha-2.PNG"]
+    ["./ToolBox/Images/Pg6/HAHAHAHA.png", "./ToolBox/Images/Pg6/Haha-2.png"]
 ];
 const Links = ["https://snack.expo.dev/@jose_isac1/nova_ficha", "https://snack.expo.dev/@jose_isac1/telas", "https://snack.expo.dev/@jose_isac1/app_aula01", "https://snack.expo.dev/@jose_isac1/calculadora_simples", "https://snack.expo.dev/@jose_isac1/aula---flatlist", "https://snack.expo.dev/@jose_isac1/navegacaodetelas-meu"];
 const sound = new Audio("./ToolBox/Sounds/Click.mp3");
